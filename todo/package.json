@@ -1,0 +1,28 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "ff": "nodemon helpers/ff.js",
+    "addTask": "nodemon helpers/addTask.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "contract": "truffle compile && truffle migrate --reset",
+    "parser": "nodemon parser/index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.17.1"
+  },
+  "dependencies": {
+    "abi-decoder": "^1.0.9",
+    "dotenv": "^5.0.1",
+    "ethereum-input-data-decoder": "^0.0.3",
+    "keccak": "^1.4.0",
+    "web3": "0.19.0"
+  }
+}
